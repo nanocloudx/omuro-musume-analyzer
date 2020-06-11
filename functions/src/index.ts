@@ -45,6 +45,7 @@ export const onCreateAnnotationDoc = func.firestore.document('annotation/{id}').
   }))
   const average = {
     id: characterId,
+    annotationCount: data.length,
     cute: result.cute / data.length,
     active: result.active / data.length,
     adult: result.adult / data.length,
